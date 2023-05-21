@@ -122,7 +122,7 @@ module Rugged
         raise TypeError, "Expected a Rugged::Tree or Rugged::Commit instance"
       end
 
-      left.diff_workdir(opts)
+      left.diff_workdir(**opts)
     end
 
     # Walks over a set of commits using Rugged::Walker.
